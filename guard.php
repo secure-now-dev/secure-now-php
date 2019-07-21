@@ -1,14 +1,52 @@
 <html class="no-js" lang="en">
-  <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Secure Now</title>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
-  </head>
+  <?php include 'components/head.php'; ?>
   <body>
 	<?php include 'components/nav.php'; ?>
 
-	<h1>This is the guard</h1>
-	<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+	<div class="ui grid container guard">
+	  <h1>This is the guard</h1>
+	  <div class="ui form">
+	    <div class="field">
+	      <label>Guard Name</label>
+	      <input type="text" placeholder="Guard Name">
+	    </div>
+	    <div class="field">
+	      <label>Phone Number</label>
+	      <input type="number" placeholder="Phone Number">
+	    </div>
+	    <div class="field">
+	      <label>Contact Email</label>
+	      <input type="email" placeholder="example@eaxample.com">
+	    </div>
+
+	    <div class="field">
+	      <input type="file" (change)="fileEvent($event)" class="inputfile" id="embedpollfileinput" />
+		  <label for="embedpollfileinput" class="ui button">
+		    <i class="ui upload icon"></i> 
+		    Upload Resume
+		  </label>
+	    </div>
+
+	    <div class="field">
+	      <input type="file" (change)="fileEvent($event)" class="inputfile" id="embedpollfileinput" />
+		  <label for="embedpollfileinput" class="ui button">
+		    <i class="ui upload icon"></i> 
+		    Upload Image of Guard Card
+		  </label>
+	    </div>
+
+	    <div class="field">
+	      <input type="file" onchange="text()" class="inputfile" id="embedpollfileinput" />
+		  <label for="embedpollfileinput" class="ui button">
+		    <i class="ui upload icon"></i> 
+		    Upload Additional Certifications
+		  </label>
+	    </div>
+
+	    <div class="ui button" tabindex="0">Submit</div>
+	  </div>
+	</div>
+	  
+	<?php include 'components/footer.php'; ?>
   </body>
 </html>
