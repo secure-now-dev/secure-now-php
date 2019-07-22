@@ -2,8 +2,9 @@
   <?php include 'components/head.php'; ?>
   <body>
 	<?php include 'components/nav.php'; ?>
+	<?php include 'components/top-logo.php'; ?>
 
-	<h1>This is the index</h1>
+	<!--<h1>Welcome to Secure Now</h1>-->
 	<?php include 'components/footer.php'; ?>
   </body>
 </html>

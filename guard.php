@@ -3,9 +3,8 @@
   <body>
 	<?php include 'components/nav.php'; ?>
 
-	<div class="top-logo">
-		<img src="images/securenow.png">	
-	</div>
+	<?php include 'components/top-logo.php'; ?>
+	
 	
 	<div class="ui grid container guard">
 	  <h1>Enter your guard information</h1>
