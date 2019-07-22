@@ -3,10 +3,6 @@
 	margin: 0 auto;
 }
 
-.ui.grid.container.guard {
-	margin-top: 100px;
-}
-
 .guard h1{
 	width: 100%;
 	text-align: center;
@@ -19,4 +15,10 @@
 	overflow: hidden;
 	position: absolute;
 	z-index: -1;
+}
+
+
+.top-logo {
+	text-align: center;
+    margin-top: 100px;
 }
