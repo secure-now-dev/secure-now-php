@@ -8,22 +8,22 @@
 	
 	<div class="ui grid container guard">
 	  <h1>Enter your guard information</h1>
-	  <div class="ui form">
+	  <form class="ui form" action="file-upload.php" method="post" enctype="multipart/form-data">
 	    <div class="field">
 	      <label>Guard Name</label>
-	      <input type="text" placeholder="Guard Name">
+	      <input type="text" placeholder="Guard Name" name="guard_name">
 	    </div>
 	    <div class="field">
 	      <label>Phone Number</label>
-	      <input type="number" placeholder="Phone Number">
+	      <input type="number" placeholder="Phone Number" name="phone_number">
 	    </div>
 	    <div class="field">
 	      <label>Contact Email</label>
-	      <input type="email" placeholder="example@eaxample.com">
+	      <input type="email" placeholder="example@eaxample.com" name="contact_email">
 	    </div>
 
 	    <div class="field">
-	      <input type="file" (change)="fileEvent($event)" class="inputfile" id="embedpollfileinput" />
+	      <input name="uploadResume[]" type="file" multiple="multiple"  class="inputfile" id="embedpollfileinput" />
 		  <label for="embedpollfileinput" class="ui button">
 		    <i class="ui upload icon"></i> 
 		    Upload Resume
@@ -31,7 +31,7 @@
 	    </div>
 
 	    <div class="field">
-	      <input type="file" (change)="fileEvent($event)" class="inputfile" id="embedpollfileinput" />
+	      <input name="uploadGuardCard[]" type="file" multiple="multiple"  class="inputfile" id="embedpollfileinput" />
 		  <label for="embedpollfileinput" class="ui button">
 		    <i class="ui upload icon"></i> 
 		    Upload Image of Guard Card
@@ -39,15 +39,15 @@
 	    </div>
 
 	    <div class="field">
-	      <input type="file" onchange="text()" class="inputfile" id="embedpollfileinput" />
+	      <input name="uploadCert[]" type="file" multiple="multiple"  class="inputfile" id="embedpollfileinput" />
 		  <label for="embedpollfileinput" class="ui button">
 		    <i class="ui upload icon"></i> 
 		    Upload Additional Certifications
 		  </label>
 	    </div>
 
-	    <div class="ui button" tabindex="0">Submit</div>
-	  </div>
+	    <input class="ui button" tabindex="0" type="submit" value="Submit">
+	  </form>
 	</div>
 	  
 	<?php include 'components/footer.php'; ?>
