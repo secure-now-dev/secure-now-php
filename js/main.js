@@ -27,11 +27,47 @@ $(document).ready(function(){
             identifier: 'contact_email',
             rules: [{
                 type: 'empty',
-                prompt: 'Please enter a phone number'
+                prompt: 'Please enter an email'
             }]
         }
     }
   })
+
+  $('#clientForm').form({
+    fields: {
+        company_name: {
+            identifier: 'company_name',
+            rules: [{
+                type: 'empty',
+                prompt: 'Please enter your company name',
+            }]
+        },
+        phone_number: {
+            identifier: 'phone_number',
+            rules: [{
+                type: 'empty',
+                prompt: 'Please enter a phone number',
+            }]
+        },
+        contact_name: {
+            identifier: 'contact_name',
+            rules: [{
+                type: 'empty',
+                prompt: 'Please enter a contact name',
+            }]
+        },
+        contant_email: {
+            identifier: 'contant_email',
+            rules: [{
+                type: 'empty',
+                prompt: 'Please enter a contact email',
+            }]
+        }
+    }
+  })
+
+
+
 
   var options =  {
       onComplete: function(cep) {
@@ -63,6 +99,10 @@ $(document).ready(function(){
     readURL(this, '.imagePreviewStripCert');
   });
 
+  $("#contactUpload").change(function() {
+    readURL(this, '.imagePreviewContractUpload');
+  });
+
 
 
   //$('.name').mask('/[A-Za-z]/');
@@ -92,6 +132,11 @@ $(document).ready(function(){
             div.appendChild(imageDiv);
 
             $(previewId).append(div);
+
+            $(".close").click(function(){
+                $(this).parent(".imagePreviewContainer").remove();
+            });
+          
         }
         reader.readAsDataURL(input.files[0]);
     }
