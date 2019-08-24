@@ -13,8 +13,22 @@ $(document).ready(function(){
           identifier: 'guard_name',
           rules: [{
             type: 'empty',
-            prompt: 'Please enter a your name',
+            prompt: 'Please enter your name',
           }]
+        },
+        phone_number: {
+            identifier: 'phone_number',
+            rules: [{
+                type: 'empty',
+                prompt: 'Please enter a phone number'
+            }]
+        },
+        contact_email: {
+            identifier: 'contact_email',
+            rules: [{
+                type: 'empty',
+                prompt: 'Please enter a phone number'
+            }]
         }
     }
   })

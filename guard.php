@@ -22,6 +22,10 @@
 	      <input type="email" placeholder="example@eaxample.com" name="contact_email" required>
 	    </div>
 
+	    <div class="imagePreviewStripResume imagePreviewStrip">
+	    	
+	    </div>
+
 	    <div class="field">
 	      <input name="uploadResume[]" type="file" multiple="multiple"  class="inputfile" id="resumeUpload" />
 		  <label for="resumeUpload" class="ui button">
@@ -30,7 +34,7 @@
 		  </label>
 	    </div>
 
-	    <div class="imagePreviewStripResume imagePreviewStrip">
+	    <div class="imagePreviewStripGuardCard imagePreviewStrip">
 	    	
 	    </div>
 
@@ -42,7 +46,7 @@
 		  </label>
 	    </div>
 
-	    <div class="imagePreviewStripGuardCard imagePreviewStrip">
+	    <div class="imagePreviewStripCert imagePreviewStrip">
 	    	
 	    </div>
 
@@ -54,11 +58,7 @@
 		  </label>
 	    </div>
 
-	    <div class="imagePreviewStripCert imagePreviewStrip">
-	    	
-	    </div>
-
-	    <input class="ui button" tabindex="0" type="submit" value="Submit">
+	    <input class="ui primary submit button" tabindex="0" type="submit" value="Submit">
 	  </form>
 	</div>
 	  
