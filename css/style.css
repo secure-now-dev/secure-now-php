@@ -3,6 +3,23 @@
 	margin: 0 auto;
 }
 
+html,
+body {
+ height: 100%;
+ position: relative;
+}
+
+.main-container {
+   min-height:100%;
+   position:relative;
+}
+
+.guard {
+   padding:10px;
+   padding-bottom: 340px !important;
+}
+
+
 .guard h1{
 	width: 100%;
 	text-align: center;
@@ -53,5 +70,8 @@
 }
 
 .footer {
-	margin-top: 100px !important;
+	height: 240px !important;
+	position: absolute !important;
+ 	bottom: 0 !important;
+ 	width: 100% !important;
 }
