@@ -1,0 +1,26 @@
+{
+  "name": "securenow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/secure-now-dev/secure-now-php.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/secure-now-dev/secure-now-php/issues"
+  },
+  "homepage": "https://github.com/secure-now-dev/secure-now-php#readme",
+  "dependencies": {
+    "blueimp-file-upload": "^10.1.0",
+    "jquery": "^3.4.1",
+    "jquery-mask-plugin": "^1.14.16",
+    "jquery-validation": "^1.19.1"
+  }
+}
