@@ -19,7 +19,7 @@
   "homepage": "https://github.com/secure-now-dev/secure-now-php#readme",
   "dependencies": {
     "blueimp-file-upload": "^10.1.0",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "jquery-mask-plugin": "^1.14.16",
     "jquery-validation": "^1.19.1"
   }
